@@ -93,7 +93,7 @@ export default function NapBar() {
                             sx={{ display: { xs: 'block', md: 'none' }, padding:0 }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={(event)=>{navigate((event.target.id).toLowerCase())}} sx={{padding:"0px"}}>
+                                <MenuItem key={page} onClick={(event)=>{navigate((event.target.id).toLowerCase()); handleCloseNavMenu();}} sx={{padding:"0px"}}>
                                     <Typography sx={{ textAlign: 'center', width:"100%", margin:"0px", padding:"10px", float:"left"}} id = {page}>{page}</Typography>
                                 </MenuItem>
                             ))}

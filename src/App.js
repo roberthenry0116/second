@@ -8,6 +8,7 @@ import NoPage from './pages/noPage';
 import ProjectPage from './pages/projectsPage';
 import SkillsPage from './pages/skillsPage';
 import AboutPage from './pages/aboutMePage';
+import FootBar from './components/FootBar';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/project' element={<ProjectPage />} />
         <Route path='/skills' element={<SkillsPage />} />        
       </Routes>
+      <FootBar />
     </BrowserRouter>
   );
 }
