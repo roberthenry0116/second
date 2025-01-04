@@ -9,6 +9,7 @@ import ProjectPage from './pages/projectsPage';
 import SkillsPage from './pages/skillsPage';
 import AboutPage from './pages/aboutMePage';
 import FootBar from './components/FootBar';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Route path='/home' element={<HomePage />} />
         <Route path='/about me' element={<AboutPage />} />
         <Route path='/project' element={<ProjectPage />} />
-        <Route path='/skills' element={<SkillsPage />} />        
+        <Route path='/skills' element={<SkillsPage />} />  
+        <Route path='/profile' element={<Profile />} />        
       </Routes>
       <FootBar />
     </BrowserRouter>

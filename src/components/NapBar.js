@@ -136,7 +136,7 @@ export default function NapBar() {
                             </IconButton>
                         </Tooltip>
                         <Menu
-                            sx={{ mt: '45px' }}
+                            sx={{ mt: '45px', padding:'0px'  }}
                             id="menu-appBar"
                             anchorEl={anchorElUser}
                             anchorOrigin={{
