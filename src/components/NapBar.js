@@ -152,8 +152,8 @@ export default function NapBar() {
                             onClose={handleCloseUserMenu}
                         >
                             {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
+                                <MenuItem key={setting} onClick={(event)=>{navigate((event.target.id).toLowerCase()); handleCloseUserMenu();}}>
+                                    <Typography id={setting} sx={{ textAlign: 'center' }}>{setting}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
