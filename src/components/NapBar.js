@@ -61,7 +61,7 @@ export default function NapBar() {
     if (option === 'profile') {
       setOpenDrawer(true);
     } else if (option === 'contact me') {
-      setContactMeKey((prevKey) => prevKey + 1);
+      setContactMeKey((prevKey) => prevKey + 1); // Increment the key to re-render the modal
     } else {
       navigate(option);
     }

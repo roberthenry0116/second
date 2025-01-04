@@ -9,7 +9,8 @@ import ProjectPage from './pages/projectsPage';
 import SkillsPage from './pages/skillsPage';
 import AboutPage from './pages/aboutMePage';
 import FootBar from './components/FootBar';
-import ContactMe from './components/ContactMe';
+// import ContactMe from './components/ContactMe';
+import DashBoardPage from './pages/dashBoardPage';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <Route path='/about me' element={<AboutPage />} />
         <Route path='/project' element={<ProjectPage />} />
         <Route path='/skills' element={<SkillsPage />} />  
-        <Route path='/contact me' element={<ContactMe />} />        
+        {/* <Route path='/contact me' element={<ContactMe />} />      */}
+        <Route path='/dashboard' element={<DashBoardPage />} />
       </Routes>
       <FootBar />
     </BrowserRouter>
